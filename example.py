@@ -15,7 +15,7 @@ def achou(par):
 
 
 #Directory of your images
-directoryImgs = 'C:\\Users\\vinig\\OneDrive\\Documentos\\Estudos\\Programacao\\Aprendizagem\\Python\\IMGFinder\\Imgs\\'
+directoryImgs = 'C:\\Your\\Path\\Images\\'
 
 
 img = IMGFinder(directoryImgs, globals())
