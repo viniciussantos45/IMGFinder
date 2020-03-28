@@ -3,7 +3,7 @@ import pyautogui
 import time
 
 
-def achou(par):
+def nameImage(par):
     time.sleep(0.5)
     pyautogui.hotkey('win', 'r')
     time.sleep(0.5)
