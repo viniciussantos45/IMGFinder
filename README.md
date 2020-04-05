@@ -16,4 +16,3 @@ OBS: Os nomes das imagens NÃO DEVEM CONTER ESPAÇOS,  os substituam por "_".
 OBS 2: Os nomes das funções devem ser iguais ao nome da imagem SEM O PREFIXO DE ORDENAÇÃO, exemplo: Se o nome da imagem é 1-exemplo_um.png
 o nome da função deverá ser exemplo_um()
 
-<span style="color:orange;">Word up</span>
