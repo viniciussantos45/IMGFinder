@@ -17,10 +17,10 @@ def cursos(par):
     print("hahahahahh")
 
 def conexao(par):
-    print('Problema com tamanho de array')
+    print('Achou a imagem conexão, escreva mais código para explorar do meu poder')
 
 def compartilhar(par):
-    print("Passou por aqui também")
+    print('Achou a imagem compartilhar, escreva mais código para explorar do meu poder')
 
 
 #Directory of your images
