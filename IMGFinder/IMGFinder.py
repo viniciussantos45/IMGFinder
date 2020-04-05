@@ -93,7 +93,6 @@ class IMGFinder:
             if img[-4:] == '.png':
                 if utilFind:
                     found = False
-                    ##Problema nesse while
                     while not found:
                         found = self.monitorScreen(img)
                         
