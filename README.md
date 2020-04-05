@@ -7,7 +7,7 @@ Instalar bibliotecas localizadas no arquivo requirements.txt
 
 1- Agora é possivel fazer analise de imagens ordenadamente, e aleatóriamente. Para análise aleatória bastar passar False no parametro do método, exemplo: run(False).
 
-OBS: Por padrão o método RUN analisa ordenadamente, pode ser instanciado sem parametros exemplo: run().
+OBS: Por padrão o método RUN analisa ordenadamente, pode ser instanciado sem parametros, exemplo: run().
 
 2-  O nome das imagens devem seguir o seguinte padrão caso deseja ordenação: (1-exemplo.png, 2-observacao.png, ....)
 
