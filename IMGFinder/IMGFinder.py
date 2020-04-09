@@ -35,10 +35,13 @@ class IMGFinder:
         if img[-5:] != '_.png':
             pos = self.printScreen(img)
             if pos[0] != -1:
+                par = dict()
+                par['position'] = {"x": pos[0], "y": pos[1]}
+                par['nameImg'] = img
                 func = img.replace('.png', '')
                 
                 if "<function" in str(self.functions[func]):
-                    func = self.functions[func](img)
+                    func = self.functions[func](par)
                 else:
                     warnings.warn(f"Function '{func}' not declared")
 
@@ -70,7 +73,7 @@ class IMGFinder:
             return [-1, -1]
         return max_loc
 
-    def run(self, order = True):
+    def run(self, order = True, loopImgs = []):
         # Loop que busca a pasta de imagens e chama a função avaliaTela para verificar se encontrou a imagem
         # na tela
 
@@ -83,13 +86,21 @@ class IMGFinder:
                 time.sleep(2)
         else:
             self.scrollsThroughImages(True)
+
+        
+        if len(loopImgs) > 0:
+            while True:
+               self.scrollsThroughImages(True, loopImgs) 
                 
 
         return print("Finish")
 
 
-    def scrollsThroughImages(self, utilFind = False):
-        for img in self.imgs:
+    def scrollsThroughImages(self, utilFind = False, imgsSelected = None):
+        if imgsSelected is None:
+            imgsSelected = self.imgs
+
+        for img in imgsSelected:
             if img[-4:] == '.png':
                 if utilFind:
                     found = False
