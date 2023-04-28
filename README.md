@@ -32,7 +32,7 @@ img = IMGFinder(directoryImgs, globals())
 4. Chame o método `run()` para iniciar a análise das imagens e executar as funções correspondentes:
 
 ```python
-img.run(True, ['curte.png', 'proxima.png'])
+img.run(True, ['exemplo_um.png'])
 ```
 
 ### Opções de análise
